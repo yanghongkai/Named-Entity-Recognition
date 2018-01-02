@@ -1,0 +1,7 @@
+model_config_list: {
+    config:{
+    name:"ner"
+    base_path:"/home/yanghk/ner/cls_ner_align_merg/export_model/ner/"
+    model_platform:"tensorflow"
+    },
+}

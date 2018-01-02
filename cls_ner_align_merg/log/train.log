@@ -1,0 +1,1939 @@
+2018-01-02 09:39:11,358 - log/train.log - INFO - num_chars      :	1103
+2018-01-02 09:39:11,359 - log/train.log - INFO - char_dim       :	100
+2018-01-02 09:39:11,359 - log/train.log - INFO - num_tags       :	34
+2018-01-02 09:39:11,359 - log/train.log - INFO - seg_dim        :	0
+2018-01-02 09:39:11,359 - log/train.log - INFO - lstm_dim       :	100
+2018-01-02 09:39:11,359 - log/train.log - INFO - batch_size     :	20
+2018-01-02 09:39:11,359 - log/train.log - INFO - emb_file       :	wiki_100.utf8
+2018-01-02 09:39:11,359 - log/train.log - INFO - clip           :	5
+2018-01-02 09:39:11,359 - log/train.log - INFO - dropout_keep   :	0.5
+2018-01-02 09:39:11,359 - log/train.log - INFO - optimizer      :	adam
+2018-01-02 09:39:11,359 - log/train.log - INFO - lr             :	0.001
+2018-01-02 09:39:11,359 - log/train.log - INFO - tag_schema     :	iobes
+2018-01-02 09:39:11,359 - log/train.log - INFO - pre_emb        :	False
+2018-01-02 09:39:11,359 - log/train.log - INFO - zeros          :	False
+2018-01-02 09:39:11,359 - log/train.log - INFO - lower          :	False
+2018-01-02 09:39:12,858 - log/train.log - INFO - Created model with fresh parameters.
+2018-01-02 09:39:12,985 - log/train.log - INFO - start training
+2018-01-02 09:39:17,914 - log/train.log - INFO - iteration:1 step:100/152, NER loss:57.888222
+2018-01-02 09:39:20,184 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:39:20,861 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2812 phrases; correct: 2278.
+
+2018-01-02 09:39:20,862 - log/train.log - INFO - accuracy:  90.02%; precision:  81.01%; recall:  87.82%; FB1:  84.28
+
+2018-01-02 09:39:20,862 - log/train.log - INFO -               DAY: precision:  98.11%; recall: 100.00%; FB1:  99.04  264
+
+2018-01-02 09:39:20,862 - log/train.log - INFO -              ELOC: precision:  12.50%; recall:  10.08%; FB1:  11.16  96
+
+2018-01-02 09:39:20,862 - log/train.log - INFO -             ETIME: precision:  94.59%; recall:  96.69%; FB1:  95.63  185
+
+2018-01-02 09:39:20,862 - log/train.log - INFO -             MONTH: precision:  62.04%; recall:  77.31%; FB1:  68.84  324
+
+2018-01-02 09:39:20,862 - log/train.log - INFO -              PART: precision:  98.86%; recall: 100.00%; FB1:  99.43  263
+
+2018-01-02 09:39:20,862 - log/train.log - INFO -              ROAD: precision:  13.11%; recall:   9.64%; FB1:  11.11  61
+
+2018-01-02 09:39:20,862 - log/train.log - INFO -              SLOC: precision:  65.84%; recall:  90.29%; FB1:  76.15  565
+
+2018-01-02 09:39:20,862 - log/train.log - INFO -             SPEED: precision:  88.76%; recall:  90.36%; FB1:  89.55  169
+
+2018-01-02 09:39:20,862 - log/train.log - INFO -             STIME: precision:  94.32%; recall:  96.14%; FB1:  95.22  264
+
+2018-01-02 09:39:20,862 - log/train.log - INFO -              TYPE: precision:  94.06%; recall: 100.00%; FB1:  96.94  438
+
+2018-01-02 09:39:20,862 - log/train.log - INFO -              YEAR: precision:  98.36%; recall:  98.36%; FB1:  98.36  183
+
+2018-01-02 09:39:20,916 - log/train.log - INFO - new best dev f1 score:84.280
+2018-01-02 09:39:21,201 - log/train.log - INFO - model saved
+2018-01-02 09:39:21,201 - log/train.log - INFO - evaluate:test
+2018-01-02 09:39:21,749 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2424 phrases; correct: 1949.
+
+2018-01-02 09:39:21,749 - log/train.log - INFO - accuracy:  90.56%; precision:  80.40%; recall:  87.28%; FB1:  83.70
+
+2018-01-02 09:39:21,749 - log/train.log - INFO -               DAY: precision:  98.65%; recall: 100.00%; FB1:  99.32  223
+
+2018-01-02 09:39:21,749 - log/train.log - INFO -              ELOC: precision:  14.89%; recall:  13.46%; FB1:  14.14  94
+
+2018-01-02 09:39:21,749 - log/train.log - INFO -             ETIME: precision:  88.67%; recall:  92.36%; FB1:  90.48  150
+
+2018-01-02 09:39:21,749 - log/train.log - INFO -             MONTH: precision:  61.17%; recall:  75.91%; FB1:  67.75  273
+
+2018-01-02 09:39:21,749 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:39:21,749 - log/train.log - INFO -              ROAD: precision:  12.90%; recall:  10.39%; FB1:  11.51  62
+
+2018-01-02 09:39:21,750 - log/train.log - INFO -              SLOC: precision:  66.19%; recall:  89.17%; FB1:  75.98  485
+
+2018-01-02 09:39:21,750 - log/train.log - INFO -             SPEED: precision:  95.10%; recall:  94.44%; FB1:  94.77  143
+
+2018-01-02 09:39:21,750 - log/train.log - INFO -             STIME: precision:  95.91%; recall:  95.91%; FB1:  95.91  220
+
+2018-01-02 09:39:21,750 - log/train.log - INFO -              TYPE: precision:  92.80%; recall: 100.00%; FB1:  96.27  389
+
+2018-01-02 09:39:21,750 - log/train.log - INFO -              YEAR: precision:  95.76%; recall:  96.93%; FB1:  96.34  165
+
+2018-01-02 09:39:21,803 - log/train.log - INFO - new best test f1 score:83.700
+2018-01-02 09:39:24,589 - log/train.log - INFO - iteration:2 step:48/152, NER loss: 9.112893
+2018-01-02 09:39:28,941 - log/train.log - INFO - iteration:2 step:148/152, NER loss: 2.407900
+2018-01-02 09:39:29,143 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:39:29,813 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2611 phrases; correct: 2558.
+
+2018-01-02 09:39:29,813 - log/train.log - INFO - accuracy:  99.22%; precision:  97.97%; recall:  98.61%; FB1:  98.29
+
+2018-01-02 09:39:29,813 - log/train.log - INFO -               DAY: precision:  99.23%; recall: 100.00%; FB1:  99.62  261
+
+2018-01-02 09:39:29,814 - log/train.log - INFO -              ELOC: precision:  90.40%; recall:  94.96%; FB1:  92.62  125
+
+2018-01-02 09:39:29,814 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:39:29,814 - log/train.log - INFO -             MONTH: precision:  99.62%; recall: 100.00%; FB1:  99.81  261
+
+2018-01-02 09:39:29,814 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:39:29,814 - log/train.log - INFO -              ROAD: precision:  93.83%; recall:  91.57%; FB1:  92.68  81
+
+2018-01-02 09:39:29,814 - log/train.log - INFO -              SLOC: precision:  93.11%; recall:  95.15%; FB1:  94.12  421
+
+2018-01-02 09:39:29,814 - log/train.log - INFO -             SPEED: precision:  99.40%; recall:  99.40%; FB1:  99.40  166
+
+2018-01-02 09:39:29,814 - log/train.log - INFO -             STIME: precision:  99.23%; recall:  99.61%; FB1:  99.42  260
+
+2018-01-02 09:39:29,814 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:39:29,814 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:39:29,907 - log/train.log - INFO - new best dev f1 score:98.290
+2018-01-02 09:39:30,152 - log/train.log - INFO - model saved
+2018-01-02 09:39:30,152 - log/train.log - INFO - evaluate:test
+2018-01-02 09:39:30,672 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2239 phrases; correct: 2187.
+
+2018-01-02 09:39:30,672 - log/train.log - INFO - accuracy:  98.74%; precision:  97.68%; recall:  97.94%; FB1:  97.81
+
+2018-01-02 09:39:30,672 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:39:30,672 - log/train.log - INFO -              ELOC: precision:  93.27%; recall:  93.27%; FB1:  93.27  104
+
+2018-01-02 09:39:30,672 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:39:30,672 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:39:30,672 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:39:30,672 - log/train.log - INFO -              ROAD: precision:  90.41%; recall:  85.71%; FB1:  88.00  73
+
+2018-01-02 09:39:30,672 - log/train.log - INFO -              SLOC: precision:  92.68%; recall:  95.00%; FB1:  93.83  369
+
+2018-01-02 09:39:30,672 - log/train.log - INFO -             SPEED: precision:  96.50%; recall:  95.83%; FB1:  96.17  143
+
+2018-01-02 09:39:30,672 - log/train.log - INFO -             STIME: precision:  98.64%; recall:  98.64%; FB1:  98.64  220
+
+2018-01-02 09:39:30,672 - log/train.log - INFO -              TYPE: precision:  99.72%; recall: 100.00%; FB1:  99.86  362
+
+2018-01-02 09:39:30,672 - log/train.log - INFO -              YEAR: precision:  98.78%; recall:  99.39%; FB1:  99.08  164
+
+2018-01-02 09:39:30,722 - log/train.log - INFO - new best test f1 score:97.810
+2018-01-02 09:39:35,693 - log/train.log - INFO - iteration:3 step:96/152, NER loss: 1.418554
+2018-01-02 09:39:38,170 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:39:38,716 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2618 phrases; correct: 2569.
+
+2018-01-02 09:39:38,716 - log/train.log - INFO - accuracy:  99.43%; precision:  98.13%; recall:  99.04%; FB1:  98.58
+
+2018-01-02 09:39:38,716 - log/train.log - INFO -               DAY: precision:  99.23%; recall: 100.00%; FB1:  99.62  261
+
+2018-01-02 09:39:38,716 - log/train.log - INFO -              ELOC: precision:  93.55%; recall:  97.48%; FB1:  95.47  124
+
+2018-01-02 09:39:38,716 - log/train.log - INFO -             ETIME: precision:  98.90%; recall:  98.90%; FB1:  98.90  181
+
+2018-01-02 09:39:38,716 - log/train.log - INFO -             MONTH: precision:  98.86%; recall: 100.00%; FB1:  99.43  263
+
+2018-01-02 09:39:38,716 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:39:38,716 - log/train.log - INFO -              ROAD: precision:  96.34%; recall:  95.18%; FB1:  95.76  82
+
+2018-01-02 09:39:38,716 - log/train.log - INFO -              SLOC: precision:  94.09%; recall:  96.60%; FB1:  95.33  423
+
+2018-01-02 09:39:38,716 - log/train.log - INFO -             SPEED: precision:  98.22%; recall: 100.00%; FB1:  99.10  169
+
+2018-01-02 09:39:38,716 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:39:38,716 - log/train.log - INFO -              TYPE: precision:  99.51%; recall:  99.51%; FB1:  99.51  412
+
+2018-01-02 09:39:38,716 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:39:38,763 - log/train.log - INFO - new best dev f1 score:98.580
+2018-01-02 09:39:38,967 - log/train.log - INFO - model saved
+2018-01-02 09:39:38,968 - log/train.log - INFO - evaluate:test
+2018-01-02 09:39:39,524 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2247 phrases; correct: 2205.
+
+2018-01-02 09:39:39,525 - log/train.log - INFO - accuracy:  99.00%; precision:  98.13%; recall:  98.75%; FB1:  98.44
+
+2018-01-02 09:39:39,525 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:39:39,525 - log/train.log - INFO -              ELOC: precision:  91.74%; recall:  96.15%; FB1:  93.90  109
+
+2018-01-02 09:39:39,525 - log/train.log - INFO -             ETIME: precision:  99.31%; recall: 100.00%; FB1:  99.65  145
+
+2018-01-02 09:39:39,525 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:39:39,525 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:39:39,525 - log/train.log - INFO -              ROAD: precision:  88.31%; recall:  88.31%; FB1:  88.31  77
+
+2018-01-02 09:39:39,525 - log/train.log - INFO -              SLOC: precision:  94.57%; recall:  96.67%; FB1:  95.60  368
+
+2018-01-02 09:39:39,525 - log/train.log - INFO -             SPEED: precision:  98.61%; recall:  98.61%; FB1:  98.61  144
+
+2018-01-02 09:39:39,525 - log/train.log - INFO -             STIME: precision:  99.55%; recall:  99.55%; FB1:  99.55  220
+
+2018-01-02 09:39:39,525 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  361
+
+2018-01-02 09:39:39,525 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:39:39,574 - log/train.log - INFO - new best test f1 score:98.440
+2018-01-02 09:39:42,085 - log/train.log - INFO - iteration:4 step:44/152, NER loss: 0.996413
+2018-01-02 09:39:46,574 - log/train.log - INFO - iteration:4 step:144/152, NER loss: 0.757131
+2018-01-02 09:39:46,933 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:39:47,546 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2611 phrases; correct: 2575.
+
+2018-01-02 09:39:47,546 - log/train.log - INFO - accuracy:  99.59%; precision:  98.62%; recall:  99.27%; FB1:  98.94
+
+2018-01-02 09:39:47,546 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:39:47,546 - log/train.log - INFO -              ELOC: precision:  95.90%; recall:  98.32%; FB1:  97.10  122
+
+2018-01-02 09:39:47,546 - log/train.log - INFO -             ETIME: precision:  98.90%; recall:  98.90%; FB1:  98.90  181
+
+2018-01-02 09:39:47,546 - log/train.log - INFO -             MONTH: precision:  99.24%; recall: 100.00%; FB1:  99.62  262
+
+2018-01-02 09:39:47,546 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:39:47,547 - log/train.log - INFO -              ROAD: precision:  96.39%; recall:  96.39%; FB1:  96.39  83
+
+2018-01-02 09:39:47,547 - log/train.log - INFO -              SLOC: precision:  95.01%; recall:  97.09%; FB1:  96.04  421
+
+2018-01-02 09:39:47,547 - log/train.log - INFO -             SPEED: precision:  99.40%; recall: 100.00%; FB1:  99.70  167
+
+2018-01-02 09:39:47,547 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:39:47,547 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:39:47,547 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:39:47,606 - log/train.log - INFO - new best dev f1 score:98.940
+2018-01-02 09:39:47,900 - log/train.log - INFO - model saved
+2018-01-02 09:39:47,901 - log/train.log - INFO - evaluate:test
+2018-01-02 09:39:48,400 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2245 phrases; correct: 2211.
+
+2018-01-02 09:39:48,400 - log/train.log - INFO - accuracy:  99.31%; precision:  98.49%; recall:  99.01%; FB1:  98.75
+
+2018-01-02 09:39:48,400 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:39:48,400 - log/train.log - INFO -              ELOC: precision:  94.34%; recall:  96.15%; FB1:  95.24  106
+
+2018-01-02 09:39:48,400 - log/train.log - INFO -             ETIME: precision:  99.31%; recall: 100.00%; FB1:  99.65  145
+
+2018-01-02 09:39:48,400 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:39:48,400 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:39:48,400 - log/train.log - INFO -              ROAD: precision:  86.59%; recall:  92.21%; FB1:  89.31  82
+
+2018-01-02 09:39:48,400 - log/train.log - INFO -              SLOC: precision:  96.70%; recall:  97.78%; FB1:  97.24  364
+
+2018-01-02 09:39:48,400 - log/train.log - INFO -             SPEED: precision:  98.61%; recall:  98.61%; FB1:  98.61  144
+
+2018-01-02 09:39:48,400 - log/train.log - INFO -             STIME: precision:  99.09%; recall:  99.09%; FB1:  99.09  220
+
+2018-01-02 09:39:48,400 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  361
+
+2018-01-02 09:39:48,400 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:39:48,455 - log/train.log - INFO - new best test f1 score:98.750
+2018-01-02 09:39:53,133 - log/train.log - INFO - iteration:5 step:92/152, NER loss: 0.593588
+2018-01-02 09:39:55,859 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:39:56,410 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2606 phrases; correct: 2576.
+
+2018-01-02 09:39:56,410 - log/train.log - INFO - accuracy:  99.61%; precision:  98.85%; recall:  99.31%; FB1:  99.08
+
+2018-01-02 09:39:56,410 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:39:56,410 - log/train.log - INFO -              ELOC: precision:  95.08%; recall:  97.48%; FB1:  96.27  122
+
+2018-01-02 09:39:56,410 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:39:56,410 - log/train.log - INFO -             MONTH: precision:  99.62%; recall: 100.00%; FB1:  99.81  261
+
+2018-01-02 09:39:56,410 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:39:56,411 - log/train.log - INFO -              ROAD: precision:  96.34%; recall:  95.18%; FB1:  95.76  82
+
+2018-01-02 09:39:56,411 - log/train.log - INFO -              SLOC: precision:  96.17%; recall:  97.57%; FB1:  96.87  418
+
+2018-01-02 09:39:56,411 - log/train.log - INFO -             SPEED: precision:  99.40%; recall: 100.00%; FB1:  99.70  167
+
+2018-01-02 09:39:56,411 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:39:56,411 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:39:56,411 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:39:56,468 - log/train.log - INFO - new best dev f1 score:99.080
+2018-01-02 09:39:56,717 - log/train.log - INFO - model saved
+2018-01-02 09:39:56,717 - log/train.log - INFO - evaluate:test
+2018-01-02 09:39:57,230 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2237 phrases; correct: 2212.
+
+2018-01-02 09:39:57,230 - log/train.log - INFO - accuracy:  99.28%; precision:  98.88%; recall:  99.06%; FB1:  98.97
+
+2018-01-02 09:39:57,230 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:39:57,230 - log/train.log - INFO -              ELOC: precision:  96.15%; recall:  96.15%; FB1:  96.15  104
+
+2018-01-02 09:39:57,230 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:39:57,230 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:39:57,230 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:39:57,230 - log/train.log - INFO -              ROAD: precision:  90.91%; recall:  90.91%; FB1:  90.91  77
+
+2018-01-02 09:39:57,230 - log/train.log - INFO -              SLOC: precision:  96.16%; recall:  97.50%; FB1:  96.83  365
+
+2018-01-02 09:39:57,230 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:39:57,230 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:39:57,230 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  361
+
+2018-01-02 09:39:57,230 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:39:57,288 - log/train.log - INFO - new best test f1 score:98.970
+2018-01-02 09:39:59,820 - log/train.log - INFO - iteration:6 step:40/152, NER loss: 0.432261
+2018-01-02 09:40:04,151 - log/train.log - INFO - iteration:6 step:140/152, NER loss: 0.460005
+2018-01-02 09:40:04,737 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:40:05,256 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2604 phrases; correct: 2582.
+
+2018-01-02 09:40:05,256 - log/train.log - INFO - accuracy:  99.74%; precision:  99.16%; recall:  99.54%; FB1:  99.35
+
+2018-01-02 09:40:05,256 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:40:05,256 - log/train.log - INFO -              ELOC: precision:  96.69%; recall:  98.32%; FB1:  97.50  121
+
+2018-01-02 09:40:05,256 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:40:05,256 - log/train.log - INFO -             MONTH: precision:  99.24%; recall: 100.00%; FB1:  99.62  262
+
+2018-01-02 09:40:05,256 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:40:05,256 - log/train.log - INFO -              ROAD: precision:  96.43%; recall:  97.59%; FB1:  97.01  84
+
+2018-01-02 09:40:05,257 - log/train.log - INFO -              SLOC: precision:  97.59%; recall:  98.30%; FB1:  97.94  415
+
+2018-01-02 09:40:05,257 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:40:05,257 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:40:05,257 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:40:05,257 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:40:05,319 - log/train.log - INFO - new best dev f1 score:99.350
+2018-01-02 09:40:05,675 - log/train.log - INFO - model saved
+2018-01-02 09:40:05,675 - log/train.log - INFO - evaluate:test
+2018-01-02 09:40:06,225 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2249 phrases; correct: 2213.
+
+2018-01-02 09:40:06,225 - log/train.log - INFO - accuracy:  99.45%; precision:  98.40%; recall:  99.10%; FB1:  98.75
+
+2018-01-02 09:40:06,225 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:06,225 - log/train.log - INFO -              ELOC: precision:  90.74%; recall:  94.23%; FB1:  92.45  108
+
+2018-01-02 09:40:06,225 - log/train.log - INFO -             ETIME: precision:  99.31%; recall: 100.00%; FB1:  99.65  145
+
+2018-01-02 09:40:06,225 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:06,225 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:06,225 - log/train.log - INFO -              ROAD: precision:  86.75%; recall:  93.51%; FB1:  90.00  83
+
+2018-01-02 09:40:06,225 - log/train.log - INFO -              SLOC: precision:  96.44%; recall:  97.78%; FB1:  97.10  365
+
+2018-01-02 09:40:06,225 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:40:06,225 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:06,225 - log/train.log - INFO -              TYPE: precision:  99.72%; recall: 100.00%; FB1:  99.86  362
+
+2018-01-02 09:40:06,226 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:40:10,897 - log/train.log - INFO - iteration:7 step:88/152, NER loss: 0.317986
+2018-01-02 09:40:13,709 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:40:14,285 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2612 phrases; correct: 2576.
+
+2018-01-02 09:40:14,285 - log/train.log - INFO - accuracy:  99.57%; precision:  98.62%; recall:  99.31%; FB1:  98.96
+
+2018-01-02 09:40:14,285 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:40:14,285 - log/train.log - INFO -              ELOC: precision:  92.86%; recall:  98.32%; FB1:  95.51  126
+
+2018-01-02 09:40:14,285 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:40:14,285 - log/train.log - INFO -             MONTH: precision:  99.24%; recall: 100.00%; FB1:  99.62  262
+
+2018-01-02 09:40:14,285 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:40:14,285 - log/train.log - INFO -              ROAD: precision:  95.24%; recall:  96.39%; FB1:  95.81  84
+
+2018-01-02 09:40:14,285 - log/train.log - INFO -              SLOC: precision:  95.69%; recall:  97.09%; FB1:  96.39  418
+
+2018-01-02 09:40:14,285 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:40:14,285 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:40:14,285 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:40:14,285 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:40:14,286 - log/train.log - INFO - evaluate:test
+2018-01-02 09:40:14,803 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2242 phrases; correct: 2214.
+
+2018-01-02 09:40:14,803 - log/train.log - INFO - accuracy:  99.43%; precision:  98.75%; recall:  99.15%; FB1:  98.95
+
+2018-01-02 09:40:14,803 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:14,803 - log/train.log - INFO -              ELOC: precision:  90.83%; recall:  95.19%; FB1:  92.96  109
+
+2018-01-02 09:40:14,803 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:40:14,803 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:14,803 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:14,803 - log/train.log - INFO -              ROAD: precision:  90.12%; recall:  94.81%; FB1:  92.41  81
+
+2018-01-02 09:40:14,803 - log/train.log - INFO -              SLOC: precision:  97.23%; recall:  97.50%; FB1:  97.36  361
+
+2018-01-02 09:40:14,803 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:40:14,803 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:14,803 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  361
+
+2018-01-02 09:40:14,803 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:40:17,140 - log/train.log - INFO - iteration:8 step:36/152, NER loss: 0.355415
+2018-01-02 09:40:21,576 - log/train.log - INFO - iteration:8 step:136/152, NER loss: 0.261041
+2018-01-02 09:40:22,283 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:40:22,810 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2602 phrases; correct: 2582.
+
+2018-01-02 09:40:22,810 - log/train.log - INFO - accuracy:  99.71%; precision:  99.23%; recall:  99.54%; FB1:  99.38
+
+2018-01-02 09:40:22,810 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:40:22,810 - log/train.log - INFO -              ELOC: precision:  96.69%; recall:  98.32%; FB1:  97.50  121
+
+2018-01-02 09:40:22,810 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:40:22,810 - log/train.log - INFO -             MONTH: precision:  99.62%; recall: 100.00%; FB1:  99.81  261
+
+2018-01-02 09:40:22,810 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:40:22,810 - log/train.log - INFO -              ROAD: precision:  97.59%; recall:  97.59%; FB1:  97.59  83
+
+2018-01-02 09:40:22,810 - log/train.log - INFO -              SLOC: precision:  97.59%; recall:  98.30%; FB1:  97.94  415
+
+2018-01-02 09:40:22,810 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:40:22,810 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:40:22,810 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:40:22,810 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:40:22,883 - log/train.log - INFO - new best dev f1 score:99.380
+2018-01-02 09:40:23,295 - log/train.log - INFO - model saved
+2018-01-02 09:40:23,295 - log/train.log - INFO - evaluate:test
+2018-01-02 09:40:23,868 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2240 phrases; correct: 2220.
+
+2018-01-02 09:40:23,868 - log/train.log - INFO - accuracy:  99.51%; precision:  99.11%; recall:  99.42%; FB1:  99.26
+
+2018-01-02 09:40:23,868 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:23,868 - log/train.log - INFO -              ELOC: precision:  96.15%; recall:  96.15%; FB1:  96.15  104
+
+2018-01-02 09:40:23,868 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:40:23,868 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:23,868 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:23,868 - log/train.log - INFO -              ROAD: precision:  91.36%; recall:  96.10%; FB1:  93.67  81
+
+2018-01-02 09:40:23,868 - log/train.log - INFO -              SLOC: precision:  97.53%; recall:  98.61%; FB1:  98.07  364
+
+2018-01-02 09:40:23,868 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:40:23,868 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:23,868 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  361
+
+2018-01-02 09:40:23,868 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:40:23,951 - log/train.log - INFO - new best test f1 score:99.260
+2018-01-02 09:40:28,920 - log/train.log - INFO - iteration:9 step:84/152, NER loss: 0.315318
+2018-01-02 09:40:31,867 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:40:32,469 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2600 phrases; correct: 2585.
+
+2018-01-02 09:40:32,469 - log/train.log - INFO - accuracy:  99.73%; precision:  99.42%; recall:  99.65%; FB1:  99.54
+
+2018-01-02 09:40:32,469 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:40:32,469 - log/train.log - INFO -              ELOC: precision:  96.69%; recall:  98.32%; FB1:  97.50  121
+
+2018-01-02 09:40:32,469 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:40:32,469 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:40:32,469 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:40:32,469 - log/train.log - INFO -              ROAD: precision:  98.78%; recall:  97.59%; FB1:  98.18  82
+
+2018-01-02 09:40:32,469 - log/train.log - INFO -              SLOC: precision:  98.31%; recall:  99.03%; FB1:  98.67  415
+
+2018-01-02 09:40:32,469 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:40:32,470 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:40:32,470 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:40:32,470 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:40:32,562 - log/train.log - INFO - new best dev f1 score:99.540
+2018-01-02 09:40:33,003 - log/train.log - INFO - model saved
+2018-01-02 09:40:33,003 - log/train.log - INFO - evaluate:test
+2018-01-02 09:40:33,520 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2240 phrases; correct: 2218.
+
+2018-01-02 09:40:33,520 - log/train.log - INFO - accuracy:  99.47%; precision:  99.02%; recall:  99.33%; FB1:  99.17
+
+2018-01-02 09:40:33,520 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:33,520 - log/train.log - INFO -              ELOC: precision:  95.19%; recall:  95.19%; FB1:  95.19  104
+
+2018-01-02 09:40:33,520 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:40:33,520 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:33,521 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:33,521 - log/train.log - INFO -              ROAD: precision:  90.12%; recall:  94.81%; FB1:  92.41  81
+
+2018-01-02 09:40:33,521 - log/train.log - INFO -              SLOC: precision:  97.53%; recall:  98.61%; FB1:  98.07  364
+
+2018-01-02 09:40:33,521 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:40:33,521 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:33,521 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  361
+
+2018-01-02 09:40:33,521 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:40:35,898 - log/train.log - INFO - iteration:10 step:32/152, NER loss: 0.251040
+2018-01-02 09:40:40,412 - log/train.log - INFO - iteration:10 step:132/152, NER loss: 0.152991
+2018-01-02 09:40:41,356 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:40:41,877 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2598 phrases; correct: 2585.
+
+2018-01-02 09:40:41,877 - log/train.log - INFO - accuracy:  99.67%; precision:  99.50%; recall:  99.65%; FB1:  99.58
+
+2018-01-02 09:40:41,877 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:40:41,877 - log/train.log - INFO -              ELOC: precision:  98.32%; recall:  98.32%; FB1:  98.32  119
+
+2018-01-02 09:40:41,877 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:40:41,877 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:40:41,877 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:40:41,877 - log/train.log - INFO -              ROAD: precision:  98.78%; recall:  97.59%; FB1:  98.18  82
+
+2018-01-02 09:40:41,877 - log/train.log - INFO -              SLOC: precision:  98.55%; recall:  99.03%; FB1:  98.79  414
+
+2018-01-02 09:40:41,877 - log/train.log - INFO -             SPEED: precision:  99.40%; recall: 100.00%; FB1:  99.70  167
+
+2018-01-02 09:40:41,877 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:40:41,877 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:40:41,877 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:40:41,962 - log/train.log - INFO - new best dev f1 score:99.580
+2018-01-02 09:40:42,310 - log/train.log - INFO - model saved
+2018-01-02 09:40:42,311 - log/train.log - INFO - evaluate:test
+2018-01-02 09:40:42,851 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2243 phrases; correct: 2219.
+
+2018-01-02 09:40:42,851 - log/train.log - INFO - accuracy:  99.53%; precision:  98.93%; recall:  99.37%; FB1:  99.15
+
+2018-01-02 09:40:42,851 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:42,851 - log/train.log - INFO -              ELOC: precision:  93.40%; recall:  95.19%; FB1:  94.29  106
+
+2018-01-02 09:40:42,852 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:40:42,852 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:42,852 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:42,852 - log/train.log - INFO -              ROAD: precision:  90.12%; recall:  94.81%; FB1:  92.41  81
+
+2018-01-02 09:40:42,852 - log/train.log - INFO -              SLOC: precision:  97.53%; recall:  98.89%; FB1:  98.21  365
+
+2018-01-02 09:40:42,852 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:40:42,852 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:42,852 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  361
+
+2018-01-02 09:40:42,852 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:40:47,531 - log/train.log - INFO - iteration:11 step:80/152, NER loss: 0.166602
+2018-01-02 09:40:50,819 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:40:51,368 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2597 phrases; correct: 2584.
+
+2018-01-02 09:40:51,369 - log/train.log - INFO - accuracy:  99.67%; precision:  99.50%; recall:  99.61%; FB1:  99.56
+
+2018-01-02 09:40:51,369 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:40:51,369 - log/train.log - INFO -              ELOC: precision:  98.32%; recall:  98.32%; FB1:  98.32  119
+
+2018-01-02 09:40:51,369 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:40:51,369 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:40:51,369 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:40:51,369 - log/train.log - INFO -              ROAD: precision:  98.78%; recall:  97.59%; FB1:  98.18  82
+
+2018-01-02 09:40:51,369 - log/train.log - INFO -              SLOC: precision:  98.31%; recall:  98.79%; FB1:  98.55  414
+
+2018-01-02 09:40:51,369 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:40:51,369 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:40:51,369 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:40:51,369 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:40:51,369 - log/train.log - INFO - evaluate:test
+2018-01-02 09:40:51,909 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2242 phrases; correct: 2219.
+
+2018-01-02 09:40:51,909 - log/train.log - INFO - accuracy:  99.49%; precision:  98.97%; recall:  99.37%; FB1:  99.17
+
+2018-01-02 09:40:51,909 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:51,909 - log/train.log - INFO -              ELOC: precision:  94.29%; recall:  95.19%; FB1:  94.74  105
+
+2018-01-02 09:40:51,909 - log/train.log - INFO -             ETIME: precision:  99.31%; recall:  99.31%; FB1:  99.31  144
+
+2018-01-02 09:40:51,909 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:51,909 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:51,909 - log/train.log - INFO -              ROAD: precision:  90.12%; recall:  94.81%; FB1:  92.41  81
+
+2018-01-02 09:40:51,909 - log/train.log - INFO -              SLOC: precision:  97.81%; recall:  99.17%; FB1:  98.48  365
+
+2018-01-02 09:40:51,909 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:40:51,909 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:40:51,910 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  361
+
+2018-01-02 09:40:51,910 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:40:53,945 - log/train.log - INFO - iteration:12 step:28/152, NER loss: 0.212727
+2018-01-02 09:40:58,341 - log/train.log - INFO - iteration:12 step:128/152, NER loss: 0.159040
+2018-01-02 09:40:59,480 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:41:00,093 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2603 phrases; correct: 2582.
+
+2018-01-02 09:41:00,093 - log/train.log - INFO - accuracy:  99.65%; precision:  99.19%; recall:  99.54%; FB1:  99.37
+
+2018-01-02 09:41:00,093 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:41:00,093 - log/train.log - INFO -              ELOC: precision:  95.83%; recall:  96.64%; FB1:  96.23  120
+
+2018-01-02 09:41:00,093 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:41:00,093 - log/train.log - INFO -             MONTH: precision:  99.62%; recall: 100.00%; FB1:  99.81  261
+
+2018-01-02 09:41:00,093 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:41:00,093 - log/train.log - INFO -              ROAD: precision:  96.47%; recall:  98.80%; FB1:  97.62  85
+
+2018-01-02 09:41:00,093 - log/train.log - INFO -              SLOC: precision:  98.07%; recall:  98.54%; FB1:  98.31  414
+
+2018-01-02 09:41:00,093 - log/train.log - INFO -             SPEED: precision:  99.40%; recall: 100.00%; FB1:  99.70  167
+
+2018-01-02 09:41:00,093 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:41:00,093 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:41:00,093 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:41:00,094 - log/train.log - INFO - evaluate:test
+2018-01-02 09:41:00,655 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2241 phrases; correct: 2219.
+
+2018-01-02 09:41:00,655 - log/train.log - INFO - accuracy:  99.52%; precision:  99.02%; recall:  99.37%; FB1:  99.20
+
+2018-01-02 09:41:00,655 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:00,655 - log/train.log - INFO -              ELOC: precision:  95.24%; recall:  96.15%; FB1:  95.69  105
+
+2018-01-02 09:41:00,656 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:41:00,656 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:00,656 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:00,656 - log/train.log - INFO -              ROAD: precision:  91.36%; recall:  96.10%; FB1:  93.67  81
+
+2018-01-02 09:41:00,656 - log/train.log - INFO -              SLOC: precision:  97.25%; recall:  98.33%; FB1:  97.79  364
+
+2018-01-02 09:41:00,656 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:41:00,656 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:00,656 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  361
+
+2018-01-02 09:41:00,656 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:41:05,208 - log/train.log - INFO - iteration:13 step:76/152, NER loss: 0.162343
+2018-01-02 09:41:08,660 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:41:09,237 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2601 phrases; correct: 2582.
+
+2018-01-02 09:41:09,237 - log/train.log - INFO - accuracy:  99.58%; precision:  99.27%; recall:  99.54%; FB1:  99.40
+
+2018-01-02 09:41:09,238 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:41:09,238 - log/train.log - INFO -              ELOC: precision:  98.32%; recall:  98.32%; FB1:  98.32  119
+
+2018-01-02 09:41:09,238 - log/train.log - INFO -             ETIME: precision:  98.34%; recall:  98.34%; FB1:  98.34  181
+
+2018-01-02 09:41:09,238 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:41:09,238 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:41:09,238 - log/train.log - INFO -              ROAD: precision:  94.19%; recall:  97.59%; FB1:  95.86  86
+
+2018-01-02 09:41:09,238 - log/train.log - INFO -              SLOC: precision:  98.31%; recall:  98.79%; FB1:  98.55  414
+
+2018-01-02 09:41:09,238 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:41:09,238 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:41:09,238 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:41:09,238 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:41:09,238 - log/train.log - INFO - evaluate:test
+2018-01-02 09:41:09,783 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2246 phrases; correct: 2214.
+
+2018-01-02 09:41:09,783 - log/train.log - INFO - accuracy:  99.52%; precision:  98.58%; recall:  99.15%; FB1:  98.86
+
+2018-01-02 09:41:09,783 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:09,783 - log/train.log - INFO -              ELOC: precision:  89.72%; recall:  92.31%; FB1:  91.00  107
+
+2018-01-02 09:41:09,783 - log/train.log - INFO -             ETIME: precision:  99.31%; recall:  99.31%; FB1:  99.31  144
+
+2018-01-02 09:41:09,783 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:09,783 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:09,783 - log/train.log - INFO -              ROAD: precision:  90.24%; recall:  96.10%; FB1:  93.08  82
+
+2018-01-02 09:41:09,783 - log/train.log - INFO -              SLOC: precision:  96.99%; recall:  98.33%; FB1:  97.66  365
+
+2018-01-02 09:41:09,783 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:41:09,783 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:09,783 - log/train.log - INFO -              TYPE: precision:  99.72%; recall: 100.00%; FB1:  99.86  362
+
+2018-01-02 09:41:09,783 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:41:11,792 - log/train.log - INFO - iteration:14 step:24/152, NER loss: 0.209723
+2018-01-02 09:41:16,176 - log/train.log - INFO - iteration:14 step:124/152, NER loss: 0.248132
+2018-01-02 09:41:17,466 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:41:18,038 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2603 phrases; correct: 2581.
+
+2018-01-02 09:41:18,038 - log/train.log - INFO - accuracy:  99.69%; precision:  99.15%; recall:  99.50%; FB1:  99.33
+
+2018-01-02 09:41:18,038 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:41:18,038 - log/train.log - INFO -              ELOC: precision:  92.68%; recall:  95.80%; FB1:  94.21  123
+
+2018-01-02 09:41:18,038 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:41:18,038 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:41:18,038 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:41:18,038 - log/train.log - INFO -              ROAD: precision:  96.39%; recall:  96.39%; FB1:  96.39  83
+
+2018-01-02 09:41:18,038 - log/train.log - INFO -              SLOC: precision:  98.31%; recall:  99.03%; FB1:  98.67  415
+
+2018-01-02 09:41:18,038 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:41:18,038 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:41:18,038 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:41:18,038 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:41:18,039 - log/train.log - INFO - evaluate:test
+2018-01-02 09:41:18,624 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2244 phrases; correct: 2218.
+
+2018-01-02 09:41:18,624 - log/train.log - INFO - accuracy:  99.49%; precision:  98.84%; recall:  99.33%; FB1:  99.08
+
+2018-01-02 09:41:18,624 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:18,624 - log/train.log - INFO -              ELOC: precision:  92.45%; recall:  94.23%; FB1:  93.33  106
+
+2018-01-02 09:41:18,624 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:41:18,624 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:18,624 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:18,624 - log/train.log - INFO -              ROAD: precision:  90.24%; recall:  96.10%; FB1:  93.08  82
+
+2018-01-02 09:41:18,624 - log/train.log - INFO -              SLOC: precision:  97.53%; recall:  98.61%; FB1:  98.07  364
+
+2018-01-02 09:41:18,624 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:41:18,624 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:18,624 - log/train.log - INFO -              TYPE: precision:  99.72%; recall: 100.00%; FB1:  99.86  362
+
+2018-01-02 09:41:18,624 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:41:22,843 - log/train.log - INFO - iteration:15 step:72/152, NER loss: 0.143868
+2018-01-02 09:41:26,387 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:41:26,944 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2601 phrases; correct: 2583.
+
+2018-01-02 09:41:26,944 - log/train.log - INFO - accuracy:  99.74%; precision:  99.31%; recall:  99.58%; FB1:  99.44
+
+2018-01-02 09:41:26,944 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:41:26,944 - log/train.log - INFO -              ELOC: precision:  96.67%; recall:  97.48%; FB1:  97.07  120
+
+2018-01-02 09:41:26,944 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:41:26,944 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:41:26,944 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:41:26,944 - log/train.log - INFO -              ROAD: precision:  95.29%; recall:  97.59%; FB1:  96.43  85
+
+2018-01-02 09:41:26,944 - log/train.log - INFO -              SLOC: precision:  98.31%; recall:  98.79%; FB1:  98.55  414
+
+2018-01-02 09:41:26,944 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:41:26,944 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:41:26,944 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:41:26,944 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:41:26,945 - log/train.log - INFO - evaluate:test
+2018-01-02 09:41:27,503 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2242 phrases; correct: 2218.
+
+2018-01-02 09:41:27,504 - log/train.log - INFO - accuracy:  99.58%; precision:  98.93%; recall:  99.33%; FB1:  99.13
+
+2018-01-02 09:41:27,504 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:27,504 - log/train.log - INFO -              ELOC: precision:  92.45%; recall:  94.23%; FB1:  93.33  106
+
+2018-01-02 09:41:27,504 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:41:27,504 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:27,504 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:27,504 - log/train.log - INFO -              ROAD: precision:  91.36%; recall:  96.10%; FB1:  93.67  81
+
+2018-01-02 09:41:27,504 - log/train.log - INFO -              SLOC: precision:  97.80%; recall:  98.61%; FB1:  98.20  363
+
+2018-01-02 09:41:27,504 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:41:27,504 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:27,504 - log/train.log - INFO -              TYPE: precision:  99.72%; recall: 100.00%; FB1:  99.86  362
+
+2018-01-02 09:41:27,504 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:41:29,377 - log/train.log - INFO - iteration:16 step:20/152, NER loss: 0.154756
+2018-01-02 09:41:33,845 - log/train.log - INFO - iteration:16 step:120/152, NER loss: 0.091489
+2018-01-02 09:41:35,249 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:41:35,762 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2597 phrases; correct: 2585.
+
+2018-01-02 09:41:35,762 - log/train.log - INFO - accuracy:  99.73%; precision:  99.54%; recall:  99.65%; FB1:  99.60
+
+2018-01-02 09:41:35,762 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:41:35,762 - log/train.log - INFO -              ELOC: precision:  98.32%; recall:  98.32%; FB1:  98.32  119
+
+2018-01-02 09:41:35,762 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:41:35,762 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:41:35,762 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:41:35,762 - log/train.log - INFO -              ROAD: precision:  97.59%; recall:  97.59%; FB1:  97.59  83
+
+2018-01-02 09:41:35,762 - log/train.log - INFO -              SLOC: precision:  98.79%; recall:  99.03%; FB1:  98.91  413
+
+2018-01-02 09:41:35,762 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:41:35,763 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:41:35,763 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:41:35,763 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:41:35,878 - log/train.log - INFO - new best dev f1 score:99.600
+2018-01-02 09:41:36,338 - log/train.log - INFO - model saved
+2018-01-02 09:41:36,339 - log/train.log - INFO - evaluate:test
+2018-01-02 09:41:36,902 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2240 phrases; correct: 2222.
+
+2018-01-02 09:41:36,902 - log/train.log - INFO - accuracy:  99.56%; precision:  99.20%; recall:  99.51%; FB1:  99.35
+
+2018-01-02 09:41:36,902 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:36,902 - log/train.log - INFO -              ELOC: precision:  95.24%; recall:  96.15%; FB1:  95.69  105
+
+2018-01-02 09:41:36,902 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:41:36,902 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:36,902 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:36,902 - log/train.log - INFO -              ROAD: precision:  91.36%; recall:  96.10%; FB1:  93.67  81
+
+2018-01-02 09:41:36,902 - log/train.log - INFO -              SLOC: precision:  98.35%; recall:  99.17%; FB1:  98.76  363
+
+2018-01-02 09:41:36,902 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:41:36,902 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:36,902 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  361
+
+2018-01-02 09:41:36,902 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:41:37,021 - log/train.log - INFO - new best test f1 score:99.350
+2018-01-02 09:41:41,033 - log/train.log - INFO - iteration:17 step:68/152, NER loss: 0.079267
+2018-01-02 09:41:44,728 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:41:45,257 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2597 phrases; correct: 2583.
+
+2018-01-02 09:41:45,257 - log/train.log - INFO - accuracy:  99.71%; precision:  99.46%; recall:  99.58%; FB1:  99.52
+
+2018-01-02 09:41:45,257 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:41:45,257 - log/train.log - INFO -              ELOC: precision:  98.32%; recall:  98.32%; FB1:  98.32  119
+
+2018-01-02 09:41:45,257 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:41:45,257 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:41:45,257 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:41:45,257 - log/train.log - INFO -              ROAD: precision:  97.56%; recall:  96.39%; FB1:  96.97  82
+
+2018-01-02 09:41:45,257 - log/train.log - INFO -              SLOC: precision:  98.31%; recall:  98.79%; FB1:  98.55  414
+
+2018-01-02 09:41:45,257 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:41:45,257 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:41:45,257 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:41:45,257 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:41:45,258 - log/train.log - INFO - evaluate:test
+2018-01-02 09:41:45,847 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2242 phrases; correct: 2223.
+
+2018-01-02 09:41:45,848 - log/train.log - INFO - accuracy:  99.57%; precision:  99.15%; recall:  99.55%; FB1:  99.35
+
+2018-01-02 09:41:45,848 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:45,848 - log/train.log - INFO -              ELOC: precision:  94.34%; recall:  96.15%; FB1:  95.24  106
+
+2018-01-02 09:41:45,848 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:41:45,848 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:45,848 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:45,848 - log/train.log - INFO -              ROAD: precision:  92.59%; recall:  97.40%; FB1:  94.94  81
+
+2018-01-02 09:41:45,848 - log/train.log - INFO -              SLOC: precision:  98.35%; recall:  99.17%; FB1:  98.76  363
+
+2018-01-02 09:41:45,848 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:41:45,848 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:45,848 - log/train.log - INFO -              TYPE: precision:  99.72%; recall: 100.00%; FB1:  99.86  362
+
+2018-01-02 09:41:45,848 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:41:45,970 - log/train.log - INFO - new best test f1 score:99.350
+2018-01-02 09:41:47,695 - log/train.log - INFO - iteration:18 step:16/152, NER loss: 0.048854
+2018-01-02 09:41:52,175 - log/train.log - INFO - iteration:18 step:116/152, NER loss: 0.055279
+2018-01-02 09:41:53,704 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:41:54,270 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2598 phrases; correct: 2582.
+
+2018-01-02 09:41:54,270 - log/train.log - INFO - accuracy:  99.66%; precision:  99.38%; recall:  99.54%; FB1:  99.46
+
+2018-01-02 09:41:54,270 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:41:54,270 - log/train.log - INFO -              ELOC: precision:  98.31%; recall:  97.48%; FB1:  97.89  118
+
+2018-01-02 09:41:54,270 - log/train.log - INFO -             ETIME: precision:  98.90%; recall:  98.90%; FB1:  98.90  181
+
+2018-01-02 09:41:54,270 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:41:54,270 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:41:54,270 - log/train.log - INFO -              ROAD: precision:  96.43%; recall:  97.59%; FB1:  97.01  84
+
+2018-01-02 09:41:54,270 - log/train.log - INFO -              SLOC: precision:  98.31%; recall:  98.79%; FB1:  98.55  414
+
+2018-01-02 09:41:54,271 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:41:54,271 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:41:54,271 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:41:54,271 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:41:54,271 - log/train.log - INFO - evaluate:test
+2018-01-02 09:41:54,766 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2238 phrases; correct: 2221.
+
+2018-01-02 09:41:54,766 - log/train.log - INFO - accuracy:  99.43%; precision:  99.24%; recall:  99.46%; FB1:  99.35
+
+2018-01-02 09:41:54,766 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:54,766 - log/train.log - INFO -              ELOC: precision:  97.09%; recall:  96.15%; FB1:  96.62  103
+
+2018-01-02 09:41:54,766 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:41:54,766 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:54,766 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:54,766 - log/train.log - INFO -              ROAD: precision:  91.36%; recall:  96.10%; FB1:  93.67  81
+
+2018-01-02 09:41:54,766 - log/train.log - INFO -              SLOC: precision:  98.07%; recall:  98.89%; FB1:  98.48  363
+
+2018-01-02 09:41:54,767 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:41:54,767 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:41:54,767 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  361
+
+2018-01-02 09:41:54,767 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:41:54,893 - log/train.log - INFO - new best test f1 score:99.350
+2018-01-02 09:41:58,822 - log/train.log - INFO - iteration:19 step:64/152, NER loss: 0.063587
+2018-01-02 09:42:02,645 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:42:03,187 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2601 phrases; correct: 2584.
+
+2018-01-02 09:42:03,187 - log/train.log - INFO - accuracy:  99.74%; precision:  99.35%; recall:  99.61%; FB1:  99.48
+
+2018-01-02 09:42:03,187 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:42:03,187 - log/train.log - INFO -              ELOC: precision:  97.50%; recall:  98.32%; FB1:  97.91  120
+
+2018-01-02 09:42:03,187 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:42:03,187 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:42:03,187 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:42:03,187 - log/train.log - INFO -              ROAD: precision:  97.59%; recall:  97.59%; FB1:  97.59  83
+
+2018-01-02 09:42:03,187 - log/train.log - INFO -              SLOC: precision:  97.84%; recall:  98.79%; FB1:  98.31  416
+
+2018-01-02 09:42:03,187 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:42:03,187 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:42:03,187 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:42:03,187 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:42:03,188 - log/train.log - INFO - evaluate:test
+2018-01-02 09:42:03,740 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2242 phrases; correct: 2222.
+
+2018-01-02 09:42:03,740 - log/train.log - INFO - accuracy:  99.57%; precision:  99.11%; recall:  99.51%; FB1:  99.31
+
+2018-01-02 09:42:03,740 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:03,740 - log/train.log - INFO -              ELOC: precision:  94.34%; recall:  96.15%; FB1:  95.24  106
+
+2018-01-02 09:42:03,740 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:42:03,740 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:03,740 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:03,741 - log/train.log - INFO -              ROAD: precision:  91.36%; recall:  96.10%; FB1:  93.67  81
+
+2018-01-02 09:42:03,741 - log/train.log - INFO -              SLOC: precision:  98.35%; recall:  99.17%; FB1:  98.76  363
+
+2018-01-02 09:42:03,741 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:42:03,741 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:03,741 - log/train.log - INFO -              TYPE: precision:  99.72%; recall: 100.00%; FB1:  99.86  362
+
+2018-01-02 09:42:03,741 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:42:05,311 - log/train.log - INFO - iteration:20 step:12/152, NER loss: 0.049675
+2018-01-02 09:42:09,719 - log/train.log - INFO - iteration:20 step:112/152, NER loss: 0.041761
+2018-01-02 09:42:11,516 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:42:12,099 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2598 phrases; correct: 2580.
+
+2018-01-02 09:42:12,099 - log/train.log - INFO - accuracy:  99.66%; precision:  99.31%; recall:  99.46%; FB1:  99.38
+
+2018-01-02 09:42:12,099 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:42:12,099 - log/train.log - INFO -              ELOC: precision:  97.46%; recall:  96.64%; FB1:  97.05  118
+
+2018-01-02 09:42:12,099 - log/train.log - INFO -             ETIME: precision:  98.90%; recall:  99.45%; FB1:  99.17  182
+
+2018-01-02 09:42:12,099 - log/train.log - INFO -             MONTH: precision:  99.62%; recall: 100.00%; FB1:  99.81  261
+
+2018-01-02 09:42:12,099 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:42:12,099 - log/train.log - INFO -              ROAD: precision:  95.18%; recall:  95.18%; FB1:  95.18  83
+
+2018-01-02 09:42:12,099 - log/train.log - INFO -              SLOC: precision:  98.55%; recall:  98.79%; FB1:  98.67  413
+
+2018-01-02 09:42:12,099 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:42:12,099 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:42:12,100 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:42:12,100 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:42:12,100 - log/train.log - INFO - evaluate:test
+2018-01-02 09:42:12,641 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2240 phrases; correct: 2221.
+
+2018-01-02 09:42:12,642 - log/train.log - INFO - accuracy:  99.42%; precision:  99.15%; recall:  99.46%; FB1:  99.31
+
+2018-01-02 09:42:12,642 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:12,642 - log/train.log - INFO -              ELOC: precision:  95.19%; recall:  95.19%; FB1:  95.19  104
+
+2018-01-02 09:42:12,642 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:42:12,642 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:12,642 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:12,642 - log/train.log - INFO -              ROAD: precision:  90.24%; recall:  96.10%; FB1:  93.08  82
+
+2018-01-02 09:42:12,642 - log/train.log - INFO -              SLOC: precision:  98.35%; recall:  99.17%; FB1:  98.76  363
+
+2018-01-02 09:42:12,642 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:42:12,642 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:12,642 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  361
+
+2018-01-02 09:42:12,642 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:42:16,627 - log/train.log - INFO - iteration:21 step:60/152, NER loss: 0.129499
+2018-01-02 09:42:20,735 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:42:21,248 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2600 phrases; correct: 2585.
+
+2018-01-02 09:42:21,248 - log/train.log - INFO - accuracy:  99.76%; precision:  99.42%; recall:  99.65%; FB1:  99.54
+
+2018-01-02 09:42:21,248 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:42:21,248 - log/train.log - INFO -              ELOC: precision:  98.32%; recall:  98.32%; FB1:  98.32  119
+
+2018-01-02 09:42:21,249 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:42:21,249 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:42:21,249 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:42:21,249 - log/train.log - INFO -              ROAD: precision:  96.43%; recall:  97.59%; FB1:  97.01  84
+
+2018-01-02 09:42:21,249 - log/train.log - INFO -              SLOC: precision:  98.55%; recall:  99.03%; FB1:  98.79  414
+
+2018-01-02 09:42:21,249 - log/train.log - INFO -             SPEED: precision:  99.40%; recall: 100.00%; FB1:  99.70  167
+
+2018-01-02 09:42:21,249 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:42:21,249 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:42:21,249 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:42:21,249 - log/train.log - INFO - evaluate:test
+2018-01-02 09:42:21,801 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2240 phrases; correct: 2222.
+
+2018-01-02 09:42:21,801 - log/train.log - INFO - accuracy:  99.54%; precision:  99.20%; recall:  99.51%; FB1:  99.35
+
+2018-01-02 09:42:21,801 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:21,801 - log/train.log - INFO -              ELOC: precision:  96.15%; recall:  96.15%; FB1:  96.15  104
+
+2018-01-02 09:42:21,801 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:42:21,801 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:21,801 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:21,801 - log/train.log - INFO -              ROAD: precision:  91.46%; recall:  97.40%; FB1:  94.34  82
+
+2018-01-02 09:42:21,801 - log/train.log - INFO -              SLOC: precision:  98.34%; recall:  98.89%; FB1:  98.61  362
+
+2018-01-02 09:42:21,801 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:42:21,801 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:21,801 - log/train.log - INFO -              TYPE: precision:  99.72%; recall: 100.00%; FB1:  99.86  362
+
+2018-01-02 09:42:21,801 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:42:21,955 - log/train.log - INFO - new best test f1 score:99.350
+2018-01-02 09:42:23,418 - log/train.log - INFO - iteration:22 step:8/152, NER loss: 0.106055
+2018-01-02 09:42:27,875 - log/train.log - INFO - iteration:22 step:108/152, NER loss: 0.072522
+2018-01-02 09:42:29,818 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:42:30,350 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2600 phrases; correct: 2585.
+
+2018-01-02 09:42:30,350 - log/train.log - INFO - accuracy:  99.76%; precision:  99.42%; recall:  99.65%; FB1:  99.54
+
+2018-01-02 09:42:30,350 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:42:30,350 - log/train.log - INFO -              ELOC: precision:  98.32%; recall:  98.32%; FB1:  98.32  119
+
+2018-01-02 09:42:30,350 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:42:30,350 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:42:30,351 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:42:30,351 - log/train.log - INFO -              ROAD: precision:  96.43%; recall:  97.59%; FB1:  97.01  84
+
+2018-01-02 09:42:30,351 - log/train.log - INFO -              SLOC: precision:  98.55%; recall:  99.03%; FB1:  98.79  414
+
+2018-01-02 09:42:30,351 - log/train.log - INFO -             SPEED: precision:  99.40%; recall: 100.00%; FB1:  99.70  167
+
+2018-01-02 09:42:30,351 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:42:30,351 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:42:30,351 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:42:30,351 - log/train.log - INFO - evaluate:test
+2018-01-02 09:42:30,900 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2243 phrases; correct: 2220.
+
+2018-01-02 09:42:30,900 - log/train.log - INFO - accuracy:  99.46%; precision:  98.97%; recall:  99.42%; FB1:  99.20
+
+2018-01-02 09:42:30,900 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:30,900 - log/train.log - INFO -              ELOC: precision:  92.45%; recall:  94.23%; FB1:  93.33  106
+
+2018-01-02 09:42:30,900 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:42:30,900 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:30,900 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:30,900 - log/train.log - INFO -              ROAD: precision:  91.46%; recall:  97.40%; FB1:  94.34  82
+
+2018-01-02 09:42:30,900 - log/train.log - INFO -              SLOC: precision:  98.07%; recall:  98.89%; FB1:  98.48  363
+
+2018-01-02 09:42:30,900 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:42:30,900 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:30,900 - log/train.log - INFO -              TYPE: precision:  99.72%; recall: 100.00%; FB1:  99.86  362
+
+2018-01-02 09:42:30,900 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:42:34,504 - log/train.log - INFO - iteration:23 step:56/152, NER loss: 0.048697
+2018-01-02 09:42:38,814 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:42:39,412 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2598 phrases; correct: 2585.
+
+2018-01-02 09:42:39,412 - log/train.log - INFO - accuracy:  99.74%; precision:  99.50%; recall:  99.65%; FB1:  99.58
+
+2018-01-02 09:42:39,412 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:42:39,412 - log/train.log - INFO -              ELOC: precision:  98.32%; recall:  98.32%; FB1:  98.32  119
+
+2018-01-02 09:42:39,412 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:42:39,412 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:42:39,412 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:42:39,412 - log/train.log - INFO -              ROAD: precision:  96.39%; recall:  96.39%; FB1:  96.39  83
+
+2018-01-02 09:42:39,412 - log/train.log - INFO -              SLOC: precision:  99.03%; recall:  99.27%; FB1:  99.15  413
+
+2018-01-02 09:42:39,412 - log/train.log - INFO -             SPEED: precision:  99.40%; recall: 100.00%; FB1:  99.70  167
+
+2018-01-02 09:42:39,412 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:42:39,412 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:42:39,412 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:42:39,413 - log/train.log - INFO - evaluate:test
+2018-01-02 09:42:39,910 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2243 phrases; correct: 2220.
+
+2018-01-02 09:42:39,910 - log/train.log - INFO - accuracy:  99.55%; precision:  98.97%; recall:  99.42%; FB1:  99.20
+
+2018-01-02 09:42:39,910 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:39,910 - log/train.log - INFO -              ELOC: precision:  92.45%; recall:  94.23%; FB1:  93.33  106
+
+2018-01-02 09:42:39,910 - log/train.log - INFO -             ETIME: precision:  99.31%; recall: 100.00%; FB1:  99.65  145
+
+2018-01-02 09:42:39,911 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:39,911 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:39,911 - log/train.log - INFO -              ROAD: precision:  92.59%; recall:  97.40%; FB1:  94.94  81
+
+2018-01-02 09:42:39,911 - log/train.log - INFO -              SLOC: precision:  98.07%; recall:  98.89%; FB1:  98.48  363
+
+2018-01-02 09:42:39,911 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:42:39,911 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:39,911 - log/train.log - INFO -              TYPE: precision:  99.72%; recall: 100.00%; FB1:  99.86  362
+
+2018-01-02 09:42:39,911 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:42:41,228 - log/train.log - INFO - iteration:24 step:4/152, NER loss: 0.028938
+2018-01-02 09:42:45,703 - log/train.log - INFO - iteration:24 step:104/152, NER loss: 0.074042
+2018-01-02 09:42:47,785 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:42:48,484 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2599 phrases; correct: 2583.
+
+2018-01-02 09:42:48,484 - log/train.log - INFO - accuracy:  99.74%; precision:  99.38%; recall:  99.58%; FB1:  99.48
+
+2018-01-02 09:42:48,484 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:42:48,484 - log/train.log - INFO -              ELOC: precision:  97.48%; recall:  97.48%; FB1:  97.48  119
+
+2018-01-02 09:42:48,484 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:42:48,484 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:42:48,484 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:42:48,484 - log/train.log - INFO -              ROAD: precision:  96.43%; recall:  97.59%; FB1:  97.01  84
+
+2018-01-02 09:42:48,485 - log/train.log - INFO -              SLOC: precision:  98.31%; recall:  98.79%; FB1:  98.55  414
+
+2018-01-02 09:42:48,485 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:42:48,485 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:42:48,485 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:42:48,485 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:42:48,485 - log/train.log - INFO - evaluate:test
+2018-01-02 09:42:49,059 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2239 phrases; correct: 2222.
+
+2018-01-02 09:42:49,059 - log/train.log - INFO - accuracy:  99.52%; precision:  99.24%; recall:  99.51%; FB1:  99.37
+
+2018-01-02 09:42:49,059 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:49,059 - log/train.log - INFO -              ELOC: precision:  95.19%; recall:  95.19%; FB1:  95.19  104
+
+2018-01-02 09:42:49,059 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:42:49,059 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:49,059 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:49,059 - log/train.log - INFO -              ROAD: precision:  92.59%; recall:  97.40%; FB1:  94.94  81
+
+2018-01-02 09:42:49,059 - log/train.log - INFO -              SLOC: precision:  98.35%; recall:  99.17%; FB1:  98.76  363
+
+2018-01-02 09:42:49,059 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:42:49,060 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:49,060 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  361
+
+2018-01-02 09:42:49,060 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:42:49,237 - log/train.log - INFO - new best test f1 score:99.370
+2018-01-02 09:42:52,812 - log/train.log - INFO - iteration:25 step:52/152, NER loss: 0.043079
+2018-01-02 09:42:57,179 - log/train.log - INFO - iteration:26 step:0/152, NER loss: 0.049409
+2018-01-02 09:42:57,179 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:42:57,757 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2598 phrases; correct: 2585.
+
+2018-01-02 09:42:57,757 - log/train.log - INFO - accuracy:  99.70%; precision:  99.50%; recall:  99.65%; FB1:  99.58
+
+2018-01-02 09:42:57,757 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:42:57,757 - log/train.log - INFO -              ELOC: precision:  99.15%; recall:  98.32%; FB1:  98.73  118
+
+2018-01-02 09:42:57,757 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:42:57,757 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:42:57,757 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:42:57,757 - log/train.log - INFO -              ROAD: precision:  97.62%; recall:  98.80%; FB1:  98.20  84
+
+2018-01-02 09:42:57,757 - log/train.log - INFO -              SLOC: precision:  98.31%; recall:  98.79%; FB1:  98.55  414
+
+2018-01-02 09:42:57,757 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:42:57,757 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:42:57,757 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:42:57,757 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:42:57,758 - log/train.log - INFO - evaluate:test
+2018-01-02 09:42:58,306 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2238 phrases; correct: 2222.
+
+2018-01-02 09:42:58,306 - log/train.log - INFO - accuracy:  99.45%; precision:  99.29%; recall:  99.51%; FB1:  99.40
+
+2018-01-02 09:42:58,306 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:58,306 - log/train.log - INFO -              ELOC: precision:  96.12%; recall:  95.19%; FB1:  95.65  103
+
+2018-01-02 09:42:58,306 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:42:58,306 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:58,306 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:58,306 - log/train.log - INFO -              ROAD: precision:  92.59%; recall:  97.40%; FB1:  94.94  81
+
+2018-01-02 09:42:58,306 - log/train.log - INFO -              SLOC: precision:  98.35%; recall:  99.17%; FB1:  98.76  363
+
+2018-01-02 09:42:58,306 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:42:58,306 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:42:58,306 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  361
+
+2018-01-02 09:42:58,306 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:42:58,496 - log/train.log - INFO - new best test f1 score:99.400
+2018-01-02 09:43:04,274 - log/train.log - INFO - iteration:26 step:100/152, NER loss: 0.042381
+2018-01-02 09:43:06,500 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:43:07,159 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2599 phrases; correct: 2585.
+
+2018-01-02 09:43:07,159 - log/train.log - INFO - accuracy:  99.70%; precision:  99.46%; recall:  99.65%; FB1:  99.56
+
+2018-01-02 09:43:07,159 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:43:07,159 - log/train.log - INFO -              ELOC: precision:  99.15%; recall:  98.32%; FB1:  98.73  118
+
+2018-01-02 09:43:07,159 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:43:07,159 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:43:07,159 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:43:07,159 - log/train.log - INFO -              ROAD: precision:  96.47%; recall:  98.80%; FB1:  97.62  85
+
+2018-01-02 09:43:07,159 - log/train.log - INFO -              SLOC: precision:  98.31%; recall:  98.79%; FB1:  98.55  414
+
+2018-01-02 09:43:07,159 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:43:07,159 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:43:07,159 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:43:07,159 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:43:07,160 - log/train.log - INFO - evaluate:test
+2018-01-02 09:43:07,675 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2239 phrases; correct: 2220.
+
+2018-01-02 09:43:07,675 - log/train.log - INFO - accuracy:  99.43%; precision:  99.15%; recall:  99.42%; FB1:  99.28
+
+2018-01-02 09:43:07,675 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:07,675 - log/train.log - INFO -              ELOC: precision:  96.12%; recall:  95.19%; FB1:  95.65  103
+
+2018-01-02 09:43:07,675 - log/train.log - INFO -             ETIME: precision:  99.31%; recall: 100.00%; FB1:  99.65  145
+
+2018-01-02 09:43:07,675 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:07,675 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:07,676 - log/train.log - INFO -              ROAD: precision:  92.59%; recall:  97.40%; FB1:  94.94  81
+
+2018-01-02 09:43:07,676 - log/train.log - INFO -              SLOC: precision:  97.80%; recall:  98.61%; FB1:  98.20  363
+
+2018-01-02 09:43:07,676 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:43:07,676 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:07,676 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  361
+
+2018-01-02 09:43:07,676 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:43:11,104 - log/train.log - INFO - iteration:27 step:48/152, NER loss: 0.038742
+2018-01-02 09:43:15,625 - log/train.log - INFO - iteration:27 step:148/152, NER loss: 0.028871
+2018-01-02 09:43:15,764 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:43:16,358 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2601 phrases; correct: 2589.
+
+2018-01-02 09:43:16,358 - log/train.log - INFO - accuracy:  99.78%; precision:  99.54%; recall:  99.81%; FB1:  99.67
+
+2018-01-02 09:43:16,358 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:43:16,358 - log/train.log - INFO -              ELOC: precision:  99.16%; recall:  99.16%; FB1:  99.16  119
+
+2018-01-02 09:43:16,358 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:43:16,358 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:43:16,358 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:43:16,358 - log/train.log - INFO -              ROAD: precision:  98.80%; recall:  98.80%; FB1:  98.80  83
+
+2018-01-02 09:43:16,358 - log/train.log - INFO -              SLOC: precision:  98.32%; recall:  99.51%; FB1:  98.91  417
+
+2018-01-02 09:43:16,359 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:43:16,359 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:43:16,359 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:43:16,359 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:43:16,545 - log/train.log - INFO - new best dev f1 score:99.670
+2018-01-02 09:43:17,212 - log/train.log - INFO - model saved
+2018-01-02 09:43:17,213 - log/train.log - INFO - evaluate:test
+2018-01-02 09:43:17,759 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2238 phrases; correct: 2221.
+
+2018-01-02 09:43:17,759 - log/train.log - INFO - accuracy:  99.43%; precision:  99.24%; recall:  99.46%; FB1:  99.35
+
+2018-01-02 09:43:17,760 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:17,760 - log/train.log - INFO -              ELOC: precision:  96.12%; recall:  95.19%; FB1:  95.65  103
+
+2018-01-02 09:43:17,760 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:43:17,760 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:17,760 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:17,760 - log/train.log - INFO -              ROAD: precision:  93.75%; recall:  97.40%; FB1:  95.54  80
+
+2018-01-02 09:43:17,760 - log/train.log - INFO -              SLOC: precision:  97.80%; recall:  98.89%; FB1:  98.34  364
+
+2018-01-02 09:43:17,760 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:43:17,760 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:17,760 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  361
+
+2018-01-02 09:43:17,760 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:43:23,415 - log/train.log - INFO - iteration:28 step:96/152, NER loss: 0.063458
+2018-01-02 09:43:25,832 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:43:26,356 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2599 phrases; correct: 2584.
+
+2018-01-02 09:43:26,356 - log/train.log - INFO - accuracy:  99.71%; precision:  99.42%; recall:  99.61%; FB1:  99.52
+
+2018-01-02 09:43:26,356 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:43:26,356 - log/train.log - INFO -              ELOC: precision:  98.32%; recall:  98.32%; FB1:  98.32  119
+
+2018-01-02 09:43:26,356 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:43:26,356 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:43:26,356 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:43:26,357 - log/train.log - INFO -              ROAD: precision:  97.59%; recall:  97.59%; FB1:  97.59  83
+
+2018-01-02 09:43:26,357 - log/train.log - INFO -              SLOC: precision:  98.07%; recall:  98.79%; FB1:  98.43  415
+
+2018-01-02 09:43:26,357 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:43:26,357 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:43:26,357 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:43:26,357 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:43:26,357 - log/train.log - INFO - evaluate:test
+2018-01-02 09:43:26,881 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2241 phrases; correct: 2220.
+
+2018-01-02 09:43:26,881 - log/train.log - INFO - accuracy:  99.41%; precision:  99.06%; recall:  99.42%; FB1:  99.24
+
+2018-01-02 09:43:26,881 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:26,881 - log/train.log - INFO -              ELOC: precision:  93.33%; recall:  94.23%; FB1:  93.78  105
+
+2018-01-02 09:43:26,881 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:43:26,881 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:26,881 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:26,881 - log/train.log - INFO -              ROAD: precision:  94.94%; recall:  97.40%; FB1:  96.15  79
+
+2018-01-02 09:43:26,881 - log/train.log - INFO -              SLOC: precision:  97.53%; recall:  98.89%; FB1:  98.21  365
+
+2018-01-02 09:43:26,881 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:43:26,881 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:26,881 - log/train.log - INFO -              TYPE: precision:  99.72%; recall: 100.00%; FB1:  99.86  362
+
+2018-01-02 09:43:26,881 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:43:30,200 - log/train.log - INFO - iteration:29 step:44/152, NER loss: 0.015391
+2018-01-02 09:43:34,530 - log/train.log - INFO - iteration:29 step:144/152, NER loss: 0.023515
+2018-01-02 09:43:34,887 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:43:35,384 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2600 phrases; correct: 2586.
+
+2018-01-02 09:43:35,384 - log/train.log - INFO - accuracy:  99.70%; precision:  99.46%; recall:  99.69%; FB1:  99.58
+
+2018-01-02 09:43:35,384 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:43:35,384 - log/train.log - INFO -              ELOC: precision:  99.15%; recall:  98.32%; FB1:  98.73  118
+
+2018-01-02 09:43:35,384 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:43:35,384 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:43:35,385 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:43:35,385 - log/train.log - INFO -              ROAD: precision:  96.47%; recall:  98.80%; FB1:  97.62  85
+
+2018-01-02 09:43:35,385 - log/train.log - INFO -              SLOC: precision:  98.55%; recall:  99.03%; FB1:  98.79  414
+
+2018-01-02 09:43:35,385 - log/train.log - INFO -             SPEED: precision:  99.40%; recall: 100.00%; FB1:  99.70  167
+
+2018-01-02 09:43:35,385 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:43:35,385 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:43:35,385 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:43:35,385 - log/train.log - INFO - evaluate:test
+2018-01-02 09:43:35,881 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2241 phrases; correct: 2221.
+
+2018-01-02 09:43:35,881 - log/train.log - INFO - accuracy:  99.47%; precision:  99.11%; recall:  99.46%; FB1:  99.28
+
+2018-01-02 09:43:35,881 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:35,881 - log/train.log - INFO -              ELOC: precision:  93.33%; recall:  94.23%; FB1:  93.78  105
+
+2018-01-02 09:43:35,881 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:43:35,881 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:35,881 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:35,881 - log/train.log - INFO -              ROAD: precision:  92.59%; recall:  97.40%; FB1:  94.94  81
+
+2018-01-02 09:43:35,881 - log/train.log - INFO -              SLOC: precision:  98.35%; recall:  99.17%; FB1:  98.76  363
+
+2018-01-02 09:43:35,881 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:43:35,881 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:35,881 - log/train.log - INFO -              TYPE: precision:  99.72%; recall: 100.00%; FB1:  99.86  362
+
+2018-01-02 09:43:35,882 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:43:41,289 - log/train.log - INFO - iteration:30 step:92/152, NER loss: 0.011792
+2018-01-02 09:43:43,964 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:43:44,484 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2599 phrases; correct: 2584.
+
+2018-01-02 09:43:44,485 - log/train.log - INFO - accuracy:  99.68%; precision:  99.42%; recall:  99.61%; FB1:  99.52
+
+2018-01-02 09:43:44,485 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:43:44,485 - log/train.log - INFO -              ELOC: precision:  98.31%; recall:  97.48%; FB1:  97.89  118
+
+2018-01-02 09:43:44,485 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:43:44,485 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:43:44,485 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:43:44,485 - log/train.log - INFO -              ROAD: precision:  96.43%; recall:  97.59%; FB1:  97.01  84
+
+2018-01-02 09:43:44,485 - log/train.log - INFO -              SLOC: precision:  98.31%; recall:  99.03%; FB1:  98.67  415
+
+2018-01-02 09:43:44,485 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:43:44,485 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:43:44,485 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:43:44,485 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:43:44,485 - log/train.log - INFO - evaluate:test
+2018-01-02 09:43:45,057 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2241 phrases; correct: 2220.
+
+2018-01-02 09:43:45,057 - log/train.log - INFO - accuracy:  99.44%; precision:  99.06%; recall:  99.42%; FB1:  99.24
+
+2018-01-02 09:43:45,057 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:45,058 - log/train.log - INFO -              ELOC: precision:  93.33%; recall:  94.23%; FB1:  93.78  105
+
+2018-01-02 09:43:45,058 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:43:45,058 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:45,058 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:45,058 - log/train.log - INFO -              ROAD: precision:  92.59%; recall:  97.40%; FB1:  94.94  81
+
+2018-01-02 09:43:45,058 - log/train.log - INFO -              SLOC: precision:  98.07%; recall:  98.89%; FB1:  98.48  363
+
+2018-01-02 09:43:45,058 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:43:45,058 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:45,058 - log/train.log - INFO -              TYPE: precision:  99.72%; recall: 100.00%; FB1:  99.86  362
+
+2018-01-02 09:43:45,058 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:43:48,271 - log/train.log - INFO - iteration:31 step:40/152, NER loss: 0.019247
+2018-01-02 09:43:52,855 - log/train.log - INFO - iteration:31 step:140/152, NER loss: 0.007961
+2018-01-02 09:43:53,337 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:43:53,913 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2597 phrases; correct: 2586.
+
+2018-01-02 09:43:53,913 - log/train.log - INFO - accuracy:  99.71%; precision:  99.58%; recall:  99.69%; FB1:  99.63
+
+2018-01-02 09:43:53,913 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:43:53,913 - log/train.log - INFO -              ELOC: precision: 100.00%; recall:  99.16%; FB1:  99.58  118
+
+2018-01-02 09:43:53,913 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:43:53,913 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:43:53,913 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:43:53,913 - log/train.log - INFO -              ROAD: precision:  98.80%; recall:  98.80%; FB1:  98.80  83
+
+2018-01-02 09:43:53,913 - log/train.log - INFO -              SLOC: precision:  98.31%; recall:  98.79%; FB1:  98.55  414
+
+2018-01-02 09:43:53,913 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:43:53,914 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:43:53,914 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:43:53,914 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:43:53,914 - log/train.log - INFO - evaluate:test
+2018-01-02 09:43:54,448 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2238 phrases; correct: 2220.
+
+2018-01-02 09:43:54,448 - log/train.log - INFO - accuracy:  99.49%; precision:  99.20%; recall:  99.42%; FB1:  99.31
+
+2018-01-02 09:43:54,448 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:54,448 - log/train.log - INFO -              ELOC: precision:  96.12%; recall:  95.19%; FB1:  95.65  103
+
+2018-01-02 09:43:54,448 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:43:54,448 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:54,448 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:54,448 - log/train.log - INFO -              ROAD: precision:  92.59%; recall:  97.40%; FB1:  94.94  81
+
+2018-01-02 09:43:54,448 - log/train.log - INFO -              SLOC: precision:  97.80%; recall:  98.61%; FB1:  98.20  363
+
+2018-01-02 09:43:54,448 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:43:54,448 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:43:54,448 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  361
+
+2018-01-02 09:43:54,448 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:43:59,888 - log/train.log - INFO - iteration:32 step:88/152, NER loss: 0.010496
+2018-01-02 09:44:02,686 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:44:03,323 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2598 phrases; correct: 2585.
+
+2018-01-02 09:44:03,323 - log/train.log - INFO - accuracy:  99.70%; precision:  99.50%; recall:  99.65%; FB1:  99.58
+
+2018-01-02 09:44:03,324 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:44:03,324 - log/train.log - INFO -              ELOC: precision:  98.31%; recall:  97.48%; FB1:  97.89  118
+
+2018-01-02 09:44:03,324 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:44:03,324 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:44:03,324 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:44:03,324 - log/train.log - INFO -              ROAD: precision:  98.80%; recall:  98.80%; FB1:  98.80  83
+
+2018-01-02 09:44:03,324 - log/train.log - INFO -              SLOC: precision:  98.31%; recall:  99.03%; FB1:  98.67  415
+
+2018-01-02 09:44:03,324 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:44:03,324 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:44:03,324 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:44:03,324 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:44:03,325 - log/train.log - INFO - evaluate:test
+2018-01-02 09:44:03,828 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2238 phrases; correct: 2220.
+
+2018-01-02 09:44:03,828 - log/train.log - INFO - accuracy:  99.42%; precision:  99.20%; recall:  99.42%; FB1:  99.31
+
+2018-01-02 09:44:03,828 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:44:03,828 - log/train.log - INFO -              ELOC: precision:  96.12%; recall:  95.19%; FB1:  95.65  103
+
+2018-01-02 09:44:03,828 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:44:03,828 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:44:03,829 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:44:03,829 - log/train.log - INFO -              ROAD: precision:  92.59%; recall:  97.40%; FB1:  94.94  81
+
+2018-01-02 09:44:03,829 - log/train.log - INFO -              SLOC: precision:  97.80%; recall:  98.61%; FB1:  98.20  363
+
+2018-01-02 09:44:03,829 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:44:03,829 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:44:03,829 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  361
+
+2018-01-02 09:44:03,829 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:44:06,970 - log/train.log - INFO - iteration:33 step:36/152, NER loss: 0.008066
+2018-01-02 09:44:11,441 - log/train.log - INFO - iteration:33 step:136/152, NER loss: 0.005533
+2018-01-02 09:44:12,170 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:44:12,701 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2599 phrases; correct: 2586.
+
+2018-01-02 09:44:12,701 - log/train.log - INFO - accuracy:  99.73%; precision:  99.50%; recall:  99.69%; FB1:  99.60
+
+2018-01-02 09:44:12,701 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:44:12,701 - log/train.log - INFO -              ELOC: precision:  99.16%; recall:  99.16%; FB1:  99.16  119
+
+2018-01-02 09:44:12,701 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:44:12,701 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:44:12,701 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:44:12,701 - log/train.log - INFO -              ROAD: precision:  97.59%; recall:  97.59%; FB1:  97.59  83
+
+2018-01-02 09:44:12,701 - log/train.log - INFO -              SLOC: precision:  98.31%; recall:  99.03%; FB1:  98.67  415
+
+2018-01-02 09:44:12,701 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:44:12,701 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:44:12,701 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:44:12,701 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:44:12,702 - log/train.log - INFO - evaluate:test
+2018-01-02 09:44:13,254 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2239 phrases; correct: 2220.
+
+2018-01-02 09:44:13,254 - log/train.log - INFO - accuracy:  99.45%; precision:  99.15%; recall:  99.42%; FB1:  99.28
+
+2018-01-02 09:44:13,254 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:44:13,254 - log/train.log - INFO -              ELOC: precision:  95.19%; recall:  95.19%; FB1:  95.19  104
+
+2018-01-02 09:44:13,254 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:44:13,254 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:44:13,254 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:44:13,255 - log/train.log - INFO -              ROAD: precision:  92.59%; recall:  97.40%; FB1:  94.94  81
+
+2018-01-02 09:44:13,255 - log/train.log - INFO -              SLOC: precision:  97.80%; recall:  98.61%; FB1:  98.20  363
+
+2018-01-02 09:44:13,255 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:44:13,255 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:44:13,255 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  361
+
+2018-01-02 09:44:13,255 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:44:18,367 - log/train.log - INFO - iteration:34 step:84/152, NER loss: 0.005222
+2018-01-02 09:44:21,463 - log/train.log - INFO - evaluate:dev
+2018-01-02 09:44:21,998 - log/train.log - INFO - processed 12509 tokens with 2594 phrases; found: 2598 phrases; correct: 2586.
+
+2018-01-02 09:44:21,998 - log/train.log - INFO - accuracy:  99.70%; precision:  99.54%; recall:  99.69%; FB1:  99.61
+
+2018-01-02 09:44:21,998 - log/train.log - INFO -               DAY: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:44:21,998 - log/train.log - INFO -              ELOC: precision: 100.00%; recall:  99.16%; FB1:  99.58  118
+
+2018-01-02 09:44:21,998 - log/train.log - INFO -             ETIME: precision:  99.45%; recall:  99.45%; FB1:  99.45  181
+
+2018-01-02 09:44:21,999 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:44:21,999 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  260
+
+2018-01-02 09:44:21,999 - log/train.log - INFO -              ROAD: precision:  97.59%; recall:  97.59%; FB1:  97.59  83
+
+2018-01-02 09:44:21,999 - log/train.log - INFO -              SLOC: precision:  98.31%; recall:  99.03%; FB1:  98.67  415
+
+2018-01-02 09:44:21,999 - log/train.log - INFO -             SPEED: precision: 100.00%; recall: 100.00%; FB1: 100.00  166
+
+2018-01-02 09:44:21,999 - log/train.log - INFO -             STIME: precision:  99.62%; recall: 100.00%; FB1:  99.81  260
+
+2018-01-02 09:44:21,999 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  412
+
+2018-01-02 09:44:21,999 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  183
+
+2018-01-02 09:44:21,999 - log/train.log - INFO - evaluate:test
+2018-01-02 09:44:22,509 - log/train.log - INFO - processed 10763 tokens with 2233 phrases; found: 2239 phrases; correct: 2220.
+
+2018-01-02 09:44:22,509 - log/train.log - INFO - accuracy:  99.45%; precision:  99.15%; recall:  99.42%; FB1:  99.28
+
+2018-01-02 09:44:22,509 - log/train.log - INFO -               DAY: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:44:22,509 - log/train.log - INFO -              ELOC: precision:  95.19%; recall:  95.19%; FB1:  95.19  104
+
+2018-01-02 09:44:22,509 - log/train.log - INFO -             ETIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  144
+
+2018-01-02 09:44:22,509 - log/train.log - INFO -             MONTH: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:44:22,509 - log/train.log - INFO -              PART: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:44:22,509 - log/train.log - INFO -              ROAD: precision:  92.59%; recall:  97.40%; FB1:  94.94  81
+
+2018-01-02 09:44:22,509 - log/train.log - INFO -              SLOC: precision:  97.80%; recall:  98.61%; FB1:  98.20  363
+
+2018-01-02 09:44:22,509 - log/train.log - INFO -             SPEED: precision: 100.00%; recall:  99.31%; FB1:  99.65  143
+
+2018-01-02 09:44:22,509 - log/train.log - INFO -             STIME: precision: 100.00%; recall: 100.00%; FB1: 100.00  220
+
+2018-01-02 09:44:22,509 - log/train.log - INFO -              TYPE: precision: 100.00%; recall: 100.00%; FB1: 100.00  361
+
+2018-01-02 09:44:22,509 - log/train.log - INFO -              YEAR: precision: 100.00%; recall: 100.00%; FB1: 100.00  163
+
+2018-01-02 09:44:25,519 - log/train.log - INFO - iteration:35 step:32/152, NER loss: 0.006601

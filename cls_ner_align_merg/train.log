@@ -1,0 +1,12 @@
+2017-12-28 20:22:27,635 - train.log - INFO - Reading model parameters from ckpt/ner.ckpt
+2017-12-28 20:27:30,529 - train.log - INFO - Reading model parameters from ckpt/ner.ckpt
+2017-12-28 21:24:11,721 - train.log - INFO - Created model with fresh parameters.
+2017-12-28 21:25:00,613 - train.log - INFO - Created model with fresh parameters.
+2017-12-28 21:25:09,313 - train.log - INFO - Created model with fresh parameters.
+2017-12-28 21:25:25,663 - train.log - INFO - Created model with fresh parameters.
+2017-12-29 16:46:51,446 - train.log - INFO - Created model with fresh parameters.
+2017-12-29 16:49:19,024 - train.log - INFO - Created model with fresh parameters.
+2018-01-02 09:26:54,541 - train.log - INFO - Created model with fresh parameters.
+2018-01-02 09:34:59,584 - train.log - INFO - Created model with fresh parameters.
+2018-01-02 09:36:34,804 - train.log - INFO - Created model with fresh parameters.
+2018-01-02 09:45:04,388 - train.log - INFO - Reading model parameters from ckpt/ner.ckpt
